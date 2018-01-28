@@ -26,7 +26,7 @@ server.use(bodyParser.urlencoded({extended:false}));
 //处理用户请求
 server.use('/',function(req,res,next) {
     console.log('----------');
-    console.log(query:'+req.query,'\nbody:'+req.body,'\ncookies:'+req.cookies,'\nsession:'+req.session);
+    console.log('query:',req.query,'\nbody:',req.body,'\ncookies:',req.cookies,'\nsession:',req.session);
 })
 
 //4.static数据
